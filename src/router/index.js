@@ -36,6 +36,18 @@ export const constantRoutes = [
     }]
   },
   {
+    path: '/message',
+    component: Layout,
+    redirect: '/message',
+    children: [{
+      path: 'message',
+      name: 'message',
+      hidden: true,
+      component: () => import('@/views/Message')
+    }]
+  },
+
+  {
     path: '/product',
     component: Layout,
     redirect: '/product',
@@ -99,11 +111,18 @@ export const constantRoutes = [
     component: Layout,
     children: [
       {
-        path: '/order',
+        path: 'order',
         name: 'Order',
-        icon: 'order',
-        meta: { title: '订单管理' },
+        icon: 'all-order',
+        meta: { title: '所有订单' },
         component: () => import('@/views/Orders')
+      },
+      {
+        path: 'create',
+        name: 'Create',
+        icon: 'create-order',
+        meta: { title: '新建订单' },
+        component: () => import('@/views/Orders/Create/index.vue')
       }
     ]
   },
@@ -114,7 +133,7 @@ export const constantRoutes = [
     meta: { title: '用户管理', icon: 'customer' },
     children: [
       {
-        path: '/customer',
+        path: 'customer',
         name: 'Customer',
         meta: { title: '用户管理', icon: 'customer' },
         component: () => import('../views/Customer')
@@ -128,7 +147,7 @@ export const constantRoutes = [
     meta: { title: '采购管理', icon: 'purchase' },
     children: [
       {
-        path: '/todo',
+        path: 'todo',
         name: 'todo',
         meta: { title: '采购管理', icon: 'purchase' },
         component: () => import('../views/Todo')
@@ -142,7 +161,7 @@ export const constantRoutes = [
     meta: { title: '库存管理', icon: 'repository' },
     children: [
       {
-        path: '/repertory',
+        path: 'repertory',
         name: 'repertory',
         meta: { title: '库存管理', icon: 'repository' },
         component: () => import('../views/repertory/Repertory.vue')
@@ -156,13 +175,13 @@ export const constantRoutes = [
     meta: { title: '供应商管理', icon: 'supplier' },
     children: [
       {
-        path: '/supplier',
+        path: 'supplier',
         name: 'supplier',
         meta: { title: '供应商管理', icon: 'supplier' },
         component: () => import('../views/supplier/Supplier.vue')
       },
       {
-        path: '/addSupplier',
+        path: 'addSupplier',
         name: 'AddSupplier',
         meta: { title: '新建供应商' },
         hidden: true,
@@ -176,18 +195,18 @@ export const constantRoutes = [
     component: Layout,
     children: [
       {
-        path: 'https://Lanzhii.github.io/e-commerce-admin/',
+        path: 'https://github.com/Lanzhii/e-commerce-admin',
         meta: { title: 'External Link', icon: 'link' }
       }
     ]
   },
 
-  // 404 page must be placed at the end !!!
+  // 404 page 放在最后
   { path: '*', redirect: '/404', hidden: true }
 ]
 
 const createRouter = () => new Router({
-  // mode: 'history', // require service support
+  // mode: 'history',
   scrollBehavior: () => ({ y: 0 }),
   routes: constantRoutes
 })

@@ -74,14 +74,14 @@ export default {
               borderRadius: 8
             },
             data: [
-              { value: 40, name: 'rose 1' },
-              { value: 38, name: 'rose 2' },
-              { value: 32, name: 'rose 3' },
-              { value: 30, name: 'rose 4' },
-              { value: 28, name: 'rose 5' },
-              { value: 26, name: 'rose 6' },
-              { value: 22, name: 'rose 7' },
-              { value: 18, name: 'rose 8' }
+              { value: 40, name: '食品' },
+              { value: 38, name: '百货' },
+              { value: 32, name: '美妆' },
+              { value: 30, name: '手机' },
+              { value: 28, name: '男装' },
+              { value: 26, name: '家电' },
+              { value: 22, name: '母婴' },
+              { value: 18, name: '医药' }
             ]
           }
         ]
@@ -92,7 +92,7 @@ export default {
       const myChart = echarts.init(this.$refs['compares'])
       const option = {
         title: {
-          text: '堆叠区域图'
+          text: '订单销量'
         },
         tooltip: {
           trigger: 'axis',
@@ -135,7 +135,7 @@ export default {
             name: '邮件营销',
             type: 'line',
             stack: '总量',
-            areaStyle: {},
+            areaStyle: { color: '#ffc75f' },
             emphasis: {
               focus: 'series'
             },
@@ -145,7 +145,7 @@ export default {
             name: '联盟广告',
             type: 'line',
             stack: '总量',
-            areaStyle: {},
+            areaStyle: { color: '#ff9671' },
             emphasis: {
               focus: 'series'
             },
@@ -155,7 +155,7 @@ export default {
             name: '视频广告',
             type: 'line',
             stack: '总量',
-            areaStyle: {},
+            areaStyle: { color: '#ff6f91' },
             emphasis: {
               focus: 'series'
             },
@@ -165,7 +165,7 @@ export default {
             name: '直接访问',
             type: 'line',
             stack: '总量',
-            areaStyle: {},
+            areaStyle: { color: '#d65db1' },
             emphasis: {
               focus: 'series'
             },
@@ -179,7 +179,7 @@ export default {
               show: true,
               position: 'top'
             },
-            areaStyle: {},
+            areaStyle: { color: '#845ec2' },
             emphasis: {
               focus: 'series'
             },

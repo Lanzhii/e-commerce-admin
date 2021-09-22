@@ -1,4 +1,4 @@
-<p align="center">
+<p align="center" style="font-size:40px">
     E-COMMERCE-ADMIN
 </p>
 
@@ -16,9 +16,13 @@
     <img src="https://img.shields.io/badge/router-3.1.0-brightgreen.svg" alt="vue-router">
   </a>
 </p>
+
+
 ## Introduction
+
 [e-commerce-admin](https://Lanzhii.github.io/e-commerce-admin) is a Self-operated e-commerce platform background management system. It is based on [vue](https://github.com/vuejs/vue) and uses the UI Toolkit [element-ui](https://github.com/ElemeFE/element).
-- [Preview](https://Lanzhii.github.io/e-commerce-admin)
+
+ [Preview](https://Lanzhii.github.io/e-commerce-admin)
 
 
 ## ProParation
