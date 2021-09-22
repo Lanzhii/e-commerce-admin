@@ -59,7 +59,7 @@ npm run build
 ![home.png](https://github.com/Lanzhii/e-commerce-admin/blob/master/src/assets/gh-pages/home.png)
 ![product.png](https://github.com/Lanzhii/e-commerce-admin/blob/master/src/assets/gh-pages/product.png)
 ![content.png](https://github.com/Lanzhii/e-commerce-admin/blob/master/src/assets/gh-pages/content.png)
-![activity.png](https://github.com/Lanzhii/e-commerce-admin/blob/master/src/assets/gh-pages/actvity.png)
+![activity.png](https://github.com/Lanzhii/e-commerce-admin/blob/master/src/assets/gh-pages/activity.png)
 ![estate.png](https://github.com/Lanzhii/e-commerce-admin/blob/master/src/assets/gh-pages/estate.png)
 ![order.png](https://github.com/Lanzhii/e-commerce-admin/blob/master/src/assets/gh-pages/order.png)
 ![customer.png](https://github.com/Lanzhii/e-commerce-admin/blob/master/src/assets/gh-pages/customer.png)
