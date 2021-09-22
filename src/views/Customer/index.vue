@@ -37,7 +37,7 @@
 </template>
 
 <script>
-import { getCustomer } from '@/api/order'
+// import { getCustomer } from '@/api/order'
 import Tables from '@/components/tables/Tables.vue'
 export default {
   components: { Tables },
@@ -62,9 +62,9 @@ export default {
     }
   },
   created() {
-    getCustomer('/all').then((res) => {
-      this.tabData.persons = res.data.list
-    })
+    // getCustomer('/all').then((res) => {
+    //   this.tabData.persons = res.data.list
+    // })
   }
 }
 </script>

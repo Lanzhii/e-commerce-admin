@@ -42,6 +42,7 @@ export const constantRoutes = [
     children: [
       {
         path: 'product',
+        name: 'product',
         component: () => import('@/views/Product'),
         meta: { roles: ['admin', 'editor'], title: '商品管理', icon: 'product' }
       },

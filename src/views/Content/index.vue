@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import { getContent } from '@/api/content'
+// import { getContent } from '@/api/content'
 import Tables from '@/components/tables/Tables.vue'
 import AllEidt from '@/components/main/AllEidt.vue'
 import ProductSort from '@/components/tables/ProductSort.vue'
@@ -46,10 +46,10 @@ export default {
     }
   },
   created() {
-    getContent().then(res => {
-      console.log(res)
-      this.tabData.persons = res.data.list
-    })
+    // getContent().then(res => {
+    //   console.log(res)
+    //   this.tabData.persons = res.data.list
+    // })
   },
   methods: {
     add() {

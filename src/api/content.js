@@ -2,7 +2,7 @@ import request from '@/utils/request'
 
 export function getContent(data) {
   return request({
-    url: 'e-commerce-admin/contents/all',
+    url: 'e-commerce-admin/content',
     method: 'get',
     data
   })

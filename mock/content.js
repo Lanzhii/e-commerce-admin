@@ -2,7 +2,7 @@ const Mock = require('mockjs')
 // 记录文案
 module.exports = [
   {
-    url: 'e-commerce-admin/content/all',
+    url: 'e-commerce-admin/content',
     type: 'get',
     response: config => {
       return {

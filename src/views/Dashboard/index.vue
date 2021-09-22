@@ -72,7 +72,7 @@ export default {
           name: '添加商品',
           icon: 'el-icon-coin',
           color: '#9cc',
-          link: '/product'
+          link: '/product/product'
         },
         {
           name: '添加优惠券',
